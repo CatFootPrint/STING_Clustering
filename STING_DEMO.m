@@ -3,61 +3,38 @@ close all;
 % save('./Result/center_128QAM.mat','center');save('./Result/cluster_128QAM.mat','L');
 % function STING_DEMO()
 % % Input the data
-% load('./Data/recover_128QAM.mat');
-% load('./Data/recover_8PSK.mat');
-% load('./Data/recover_16PSK.mat');
-% load('./Data/record_256QAM_-19dBm.mat');
-% load('./Data/recover_128QAM_-19dBm_2.mat');
-% load('./Data/recover_16QAM.mat');
+% load('./Data/PSK_8_0_complex.mat');
+% load('./Data/PSK_8_4_complex.mat');
+% load('./Data/PSK_8_5_complex.mat');
+% load('./Data/PSK_8_7_complex.mat');
+% load('./Data/PSK_8_8_complex.mat');
+% load('./Data/PSK_8_9_complex.mat');
+% load('./Data/PSK_8_10_complex.mat');
+% load('./Data/PSK_8_11_complex.mat');
+% load('./Data/PSK_8_13_complex.mat');
 % %==========================================================
-% load('./Data/recover_PSK_8_-25dBm_0.mat');
-% load('./Data/recover_PSK_8_-25dBm_2.mat');%Fail
-% load('./Data/recover_PSK_8_-30dBm_0.mat');%Fail
-% load('./Data/recover_PSK_8_-30dBm_1.mat');
-% load('./Data/recover_PSK_8_-30dBm_2.mat');
+% load('./Data/PSK_16_1_complex.mat');
+% load('./Data/PSK_16_2_complex.mat');
+% load('./Data/PSK_16_6_complex.mat');
+% load('./Data/PSK_16_7_complex.mat');
+% load('./Data/PSK_16_14_complex.mat');
+% load('./Data/PSK_16_19_complex.mat');
+% load('./Data/PSK_16_21_complex.mat');
+% load('./Data/PSK_16_22_complex.mat');
 % %==========================================================
-% load('./Data/recover_16PSK.mat');
-% load('./Data/recover_PSK_16_-20dBm_1.mat');
-% load('./Data/recover_PSK_16_-21dBm_1.mat');
-% load('./Data/recover_PSK_16_-21dBm_2.mat');%Fail
-% load('./Data/recover_PSK_16_-22dBm_1.mat');%Fail
-% load('./Data/recover_PSK_16_-22dBm_2.mat');%Fail
-% load('./Data/recover_PSK_16_-23dBm_1.mat');%Fail
-% load('./Data/recover_PSK_16_-25dBm_0.mat');%Fail
-% load('./Data/recover_PSK_16_-25dBm_1.mat');%Fail
-% load('./Data/recover_PSK_16_-28dBm.mat');%Fail
-% load('./Data/recover_PSK_16_-28dBm_1.mat');%Fail
-% load('./Data/recover_PSK_16_-28dBm_2.mat');%Fail
-% load('./Data/recover_PSK_16_-30dBm.mat');%Fail
-% load('./Data/recover_PSK_16_-30dBm_1.mat');%Fail
-% load('./Data/recover_PSK_16_-30dBm_2.mat');%Fail
+% load('./Data/QAM_16_2_complex.mat');
+% load('./Data/QAM_16_10_complex.mat');
+% load('./Data/QAM_16_11_complex.mat');
+% load('./Data/QAM_16_15_complex.mat');
+load('./Data/QAM_16_17_complex.mat');
 % %==========================================================
-% load('./Data/recover_16QAM.mat');
-% load('./Data/recover_QAM_16_-22dBm_0.mat');%Fail
-% load('./Data/recover_QAM_16_-22dBm_1.mat');%Fail
-% load('./Data/recover_QAM_16_-22dBm_2.mat');%Fail
+% load('./Data/QAM_32_3_complex.mat');
 % %==========================================================
-% load('./Data/recover_QAM_32_-22dBm_0.mat');%Fail
-% load('./Data/recover_QAM_32_-22dBm_-1.mat');%Fail
+% load('./Data/QAM_128_7_complex.mat');
+% load('./Data/QAM_128_14_complex.mat');
 % %==========================================================
-% load('./Data/recover_QAM_64_-19dBm_1.mat');%Fail
-% %==========================================================
-% load('./Data/recover_QAM_128_-19dBm_1.mat');%Fail
-% load('./Data/recover_QAM_128_-19dBm_2.mat');%Fail
-% load('./Data/recover_QAM_128_-22dBm_0.mat');%Fail
-% load('./Data/recover_QAM_128_-22dBm_1.mat');%Fail
-% load('./Data/recover_QAM_128_-22dBm_2.mat');%Fail
-% load('./Data/recover_QAM_128_-30dBm_0.mat');
-% load('./Data/recover_QAM_128_-30dBm_1.mat');%Fail
-% load('./Data/recover_QAM_128_-30dBm_2.mat');%Fail
-% load('./Data/recover_QAM_128_-30dBm_-1.mat');%Fail
-% load('./Data/recover_QAM_128_-30dBm_-2.mat');
-% %==========================================================
-% load('./Data/recover_QAM_256_-20dBm_-1.mat');%Fail
-% %==========================================================
-% load('./Data/recover_QPSK_-30dBm.mat');%Cannot classify through STING.
-% load('./Data/recover_QPSK_-30dBm-1.mat');
-load('./Data/recover_QPSK_-30dBm-2.mat');
+% load('./Data/QPSK_1_complex.mat');
+% load('./Data/QPSK_2_complex.mat');
 %==========================================================
 signal_recover=signal_recover/(max(max(abs(signal_recover))));
 DATA=[real(signal_recover),imag(signal_recover)];
